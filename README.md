@@ -5,7 +5,6 @@ Mobile-API for [FastFox VPN](https://play.google.com/store/apps/details?id=com.f
 ```cs
 using System;
 using FastFoxVpnApi;
-using System.Threading.Tasks;
 
 namespace Application
 {
