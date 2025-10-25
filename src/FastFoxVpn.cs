@@ -1,7 +1,6 @@
 using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Threading.Tasks;
 
 namespace FastFoxVpnApi
 {
@@ -20,7 +19,6 @@ namespace FastFoxVpnApi
         public async Task<string> GetServers(string uuid)
         {
             var response = await httpClient.GetAsync($"{apiUrl}/servers?uuid={uuid}");
-            response.EnsureSuccessStatusCode();
             return await response.Content.ReadAsStringAsync();
         }
     }
