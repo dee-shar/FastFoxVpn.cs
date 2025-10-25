@@ -17,7 +17,7 @@ namespace FastFoxVpnApi
                 new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
-        public async Task<string> getServers(string uuid)
+        public async Task<string> GetServers(string uuid)
         {
             var response = await httpClient.GetAsync($"{apiUrl}/servers?uuid={uuid}");
             response.EnsureSuccessStatusCode();
