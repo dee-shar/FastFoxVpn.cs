@@ -14,7 +14,7 @@ namespace Application
         static async Task Main()
         {
             var api = new FastFoxVpn();
-            string servers = await api.getServers("uuid");
+            string servers = await api.GetServers("uuid");
             Console.WriteLine(servers);
         }
     }
