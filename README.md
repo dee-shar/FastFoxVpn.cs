@@ -3,7 +3,6 @@ Mobile-API for [FastFox VPN](https://play.google.com/store/apps/details?id=com.f
 
 ## Example
 ```cs
-using System;
 using FastFoxVpnApi;
 
 namespace Application
